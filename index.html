@@ -28,23 +28,21 @@
 
  <br><br>
 
- <div>
-
-  <i class="fas fa-solid fa-trash"></i>  <!-- آیکون قلب -->  <input class="text" type="text">    
-
-
- </div>
+<div id="div_text">
+    <!-- <i id='del' class="fas fa-solid fa-trash"></i>    
+    <input value="" id="todo" class="text" type="text">      -->
+</div>
 
 
 
 
  <div class="div_bottom">
 
-  <input class="writing form-control" type="text">
+ <input id="main_input" class="writing form-control" type="text">
 
  <br>
 
- <button class="btn1"> Add Task </button>
+ <button onclick="Goal()" id="btn" class="btn1"> Add Task </button>
 
  </div>
 
@@ -62,7 +60,7 @@
 
  <div>
 
-   <i class="fas fa-solid fa-trash"></i>  <input class="text2" type="text">    
+   <!-- <i class="fas fa-solid fa-trash"></i>  <input class="text2" type="text">     -->
 
 
  </div>
@@ -96,7 +94,7 @@
 
  <div>
 
-    <i class="fas fa-solid fa-trash"></i>  <input class="text3" type="text">    
+    <!-- <i class="fas fa-solid fa-trash"></i>  <input class="text3" type="text">     -->
 
 
  </div>
@@ -126,9 +124,78 @@
 
 
 
-
-
 <script src="bootstrap/bootstrap/js/bootstrap.min.js"> </script>
+
+
+
+
+ <script>
+
+
+function Goal() {
+  let todo = document.getElementById("main_input").value;
+
+  
+ if(todo) {
+
+
+
+  const task = document.createElement("div");
+  task.classList.add("task-item");
+
+  
+  const Icon = document.createElement("i");
+  Icon.classList.add("fas", "fa-solid", "fa-trash", "fas-delete");
+  Icon.style.cursor = "pointer";
+
+  
+  const input = document.createElement("input");
+  input.value = todo;
+  input.className = "text";
+  input.type = "text";
+
+  const input2 = document.createElement("input");
+  input2.value = todo;
+  input2.className = "text2";
+  input2.type = "text";
+
+  const input3 = document.createElement("input");
+  input3.value = todo;
+  input3.className = "text3";
+  input3.type = "text";
+
+
+
+  
+  task.appendChild(Icon);
+  task.appendChild(input);
+
+ 
+  document.getElementById("div_text").appendChild(task);
+
+
+
+ }
+ 
+  document.getElementById("main_input").value = "";
+}
+
+
+document.addEventListener("keydown", function (x) {
+  if (x.key === "Enter") {
+    Goal();
+  }
+});
+
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("fa-trash")) {
+    e.target.parentElement.remove(); 
+  }
+});
+
+
+ </script>
 
 </body>
 </html>

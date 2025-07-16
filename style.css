@@ -58,6 +58,7 @@ padding: 10px 70px 0px 70px;
     border: none;
     padding-top: 23px;
     font-family: myfont1;
+    overflow: auto;
 
 }
 
@@ -111,6 +112,7 @@ font-size: 27px;
     text-align: center;
     font-family: 'myfont3';
     margin-right: 7%;
+    margin-bottom: 20px
 
 }
 
@@ -180,7 +182,7 @@ input.text3:focus {
 
 .div_bottom{
 
-margin-top: 68%;
+margin-top: 75%;
 
 }
 
@@ -329,3 +331,92 @@ color: rgb(255, 123, 123);
 
 }
 
+
+
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  .col_div {
+    flex-direction: column;
+    padding: 10px 20px 0 20px;
+  }
+
+  .continer {
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto !important;
+  }
+
+  .div_bottom {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .title_continer1,
+  .title_continer2,
+  .title_continer3 {
+    font-size: 22px;
+  }
+
+  .text,
+  .text2,
+  .text3 {
+    width: 90% !important;
+    font-size: 15px;
+    margin-right: 5% !important;
+  }
+
+  .writing,
+  .writing2,
+  .writing3 {
+    width: 90% !important;
+    padding: 6px !important;
+    font-size: 15px;
+  }
+
+  .btn1,
+  .btn2,
+  .btn3 {
+    width: 90% !important;
+    height: 40px !important;
+    font-size: 14px;
+  }
+
+  .col_div {
+    padding: 10px 10px 0 10px !important;
+  }
+}
+
+
+
+.task-item {
+  /* margin: 10px auto;
+  padding: 12px 15px;
+  background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff1a;
+  font-family: myfont3;
+  color: white;
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: all 0.4s ease; */
+  opacity: 0; 
+  transform: translateY(20px);
+  animation: fadeInUp 0.4s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
