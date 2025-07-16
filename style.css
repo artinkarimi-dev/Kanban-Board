@@ -1,0 +1,331 @@
+
+
+@font-face {
+    font-family: myfont;
+    src: url('font/FiraCode-VF.ttf');
+}
+
+
+@font-face {
+    font-family: myfont2;
+    src: url('font/IRANSansX-Black.ttf');
+}
+
+
+@font-face {
+    font-family: myfont3;
+    src: url('font/IRANSansX-UltraLight.ttf');
+}
+
+
+body{
+
+background: linear-gradient(304deg, #544400, #0f0034);
+color: white;
+
+}
+
+
+.title{
+
+text-align: center; 
+align-items: center; 
+color: rgb(152, 152, 255); 
+font-weight: bold;
+font-family: myfont3;
+
+}
+
+
+.col_div{
+
+display: flex;
+padding: 10px 70px 0px 70px;
+
+
+}
+
+.continer{
+
+   background-color: #1d005e7d;
+    height: 500px;
+    width: 35%;
+    border-radius: 8px;
+    margin: auto;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px #ffffff1c;
+    border: none;
+    padding-top: 23px;
+    font-family: myfont1;
+
+}
+
+
+
+.title_continer1{
+
+font-size: 27px;
+    font-family: 'myfont3';
+    font-weight: bold;
+    color: #ff7cfa;
+
+}
+
+
+
+.title_continer2{
+
+font-size: 27px;
+    font-family: 'myfont3';
+    font-weight: bold;
+    color: #ffef3c;
+
+}
+
+
+
+.title_continer3{
+
+font-size: 27px;
+    font-family: 'myfont3';
+    font-weight: bold;
+    color: #41e700;
+
+}
+
+
+
+.text{
+
+   background: linear-gradient(45deg, #2f2f2f, #434343);
+    height: 45px;
+    width: 75%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: -7px 0px 2px 0px #ff00e0;
+    direction: rtl;
+    border: none;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-family: 'myfont3';
+    margin-right: 7%;
+
+}
+
+
+
+
+.text2{
+
+   background: linear-gradient(45deg, #2f2f2f, #434343);
+    height: 45px;
+    width: 75%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: -7px 0px 2px 0px #ffee00;
+    direction: rtl;
+    border: none;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-family: 'myfont3';
+    margin-right: 7%;
+
+}
+
+
+
+
+.text3{
+
+   background: linear-gradient(45deg, #2f2f2f, #434343);
+    height: 45px;
+    width: 75%;
+    margin: auto;
+    border-radius: 6px;
+    box-shadow: -7px 0px 2px 0px #0ad000;
+    direction: rtl;
+    border: none;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    font-family: 'myfont3';
+    margin-right: 7%;
+
+}
+
+
+
+
+
+input.text:focus {
+  outline: none;
+  border: none;
+}
+
+
+input.text2:focus {
+  outline: none;
+  border: none;
+}
+
+
+input.text3:focus {
+  outline: none;
+  border: none;
+}
+
+
+.div_bottom{
+
+margin-top: 68%;
+
+}
+
+
+.writing{
+
+       width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+    font-family: myfont3;
+    background: linear-gradient(45deg, black, #4c006a);
+
+}
+
+
+.writing:focus {
+  outline: none;
+  width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    background-color: #000000;
+   padding: 8px;
+    color: white;
+}
+
+
+
+
+
+.writing2{
+
+       width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+    font-family: myfont3;
+   background: linear-gradient(45deg, black, #d4ca0099);
+
+}
+
+
+.writing2:focus {
+  outline: none;
+  width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    background-color: #000000;
+   padding: 8px;
+    color: white;
+}
+
+
+
+
+
+.writing3{
+
+       width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    padding: 8px;
+    color: white;
+    font-family: myfont3;
+    background: linear-gradient(45deg, black, #005610);
+
+}
+
+
+.writing3:focus {
+  outline: none;
+  width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    background-color: #000000;
+   padding: 8px;
+    color: white;
+}
+
+
+
+
+
+
+.btn1{
+
+width: 80%;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: #f940ff;
+    color: rgb(0, 0, 0);
+    font-family: 'myfont3';
+    font-weight: bold;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+
+}
+
+
+
+
+.btn2{
+
+width: 80%;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: #fbff0a;
+    color: rgb(0, 0, 0);
+    font-family: 'myfont3';
+    font-weight: bold;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.btn3{
+
+width: 80%;
+    padding: 0px;
+    border-radius: 6px;
+    background-color: #03b100;
+    color: rgb(0, 0, 0);
+    font-family: 'myfont3';
+    font-weight: bold;
+    border: none;
+    height: 45px;
+    cursor: pointer;
+
+}
+
+.fas{
+
+margin-right: 5%;
+display: inline-flex;
+cursor: pointer;
+fill: rgb(255, 123, 123);
+color: rgb(255, 123, 123);
+
+}
+
