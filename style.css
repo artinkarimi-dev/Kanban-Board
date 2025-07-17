@@ -32,8 +32,9 @@ text-align: center;
 align-items: center; 
 color: rgb(152, 152, 255); 
 font-weight: bold;
-font-family: myfont3;
-
+font-family: myfont;
+  margin-bottom: 15px;
+  margin-top: 25px;
 }
 
 
@@ -48,7 +49,7 @@ padding: 10px 70px 0px 70px;
 .continer{
 
    background-color: #1d005e7d;
-    height: 500px;
+    height: 370px;
     width: 35%;
     border-radius: 8px;
     margin: auto;
@@ -182,7 +183,7 @@ input.text3:focus {
 
 .div_bottom{
 
-margin-top: 75%;
+margin-top: 40%;
 
 }
 
@@ -271,7 +272,7 @@ margin-top: 75%;
 
 .btn1{
 
-width: 80%;
+    width: 80%;
     padding: 0px;
     border-radius: 6px;
     background-color: #f940ff;
@@ -281,6 +282,7 @@ width: 80%;
     border: none;
     height: 45px;
     cursor: pointer;
+    margin-bottom: 30px;
 
 }
 
@@ -299,6 +301,7 @@ width: 80%;
     border: none;
     height: 45px;
     cursor: pointer;
+    margin-bottom: 30px;
 
 }
 
@@ -318,6 +321,7 @@ width: 80%;
     border: none;
     height: 45px;
     cursor: pointer;
+    margin-bottom: 30px;
 
 }
 
@@ -385,6 +389,8 @@ color: rgb(255, 123, 123);
     width: 90% !important;
     height: 40px !important;
     font-size: 14px;
+  
+    
   }
 
   .col_div {
