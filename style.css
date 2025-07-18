@@ -185,7 +185,7 @@ input.text3:focus {
 
 .div_bottom{
 
-margin-top: 40%;
+margin-top: 11%;
 
 }
 
@@ -199,7 +199,7 @@ margin-top: 40%;
     color: white;
     font-family: myfont3;
     background: linear-gradient(45deg, black, #4c006a);
-
+   margin-top: 40px;
 }
 
 
@@ -211,6 +211,7 @@ margin-top: 40%;
     background-color: #000000;
    padding: 8px;
     color: white;
+    margin-top: 40px;
 }
 
 
@@ -226,7 +227,7 @@ margin-top: 40%;
     color: white;
     font-family: myfont3;
    background: linear-gradient(45deg, black, #d4ca0099);
-
+  margin-top: 40px;
 }
 
 
@@ -238,6 +239,7 @@ margin-top: 40%;
     background-color: #000000;
    padding: 8px;
     color: white;
+    margin-top: 40px;
 }
 
 
@@ -253,7 +255,7 @@ margin-top: 40%;
     color: white;
     font-family: myfont3;
     background: linear-gradient(45deg, black, #005610);
-
+     margin-top: 40px;
 }
 
 
@@ -265,6 +267,7 @@ margin-top: 40%;
     background-color: #000000;
    padding: 8px;
     color: white;
+    margin-top: 40px;
 }
 
 
@@ -482,9 +485,18 @@ color: rgb(255, 123, 123);
   animation: fadeInUp3 0.4s forwards;
 }
 
+
 @keyframes fadeInUp3 {
   to {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+
+.dropzone {
+    min-height: 100px;
+    /* border: 2px dashed #ccc; */
+    padding: 10px;
 }
