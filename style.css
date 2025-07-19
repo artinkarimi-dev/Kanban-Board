@@ -343,7 +343,7 @@ color: rgb(255, 123, 123);
 
 
 
-/* Responsive tweaks */
+
 @media (max-width: 992px) {
   .col_div {
     flex-direction: column;

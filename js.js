@@ -37,7 +37,7 @@ function loadTasks() {
         renderTask(taskId);
     });
     assignTaskIds();
-    console.log("Tasks loaded:", tasks); // برای دیباگ
+    console.log("Tasks loaded:", tasks); 
 }
 
 function assignTaskIds() {
@@ -60,6 +60,7 @@ function renderTask(taskId) {
         taskElement.addEventListener("dragstart", drag);
 
         const Icon = document.createElement("i");
+
         Icon.classList.add("fas", "fa-solid", "fa-trash", "fas-delete");
         Icon.style.cursor = "pointer";
         Icon.addEventListener("click", () => {
@@ -72,14 +73,14 @@ function renderTask(taskId) {
         input.className = `text ${getClassForInput(task.columnId)}`;
         input.addEventListener("input", (e) => {
             tasks[taskId].value = e.target.value;
-            saveTasks(task.columnId); // به‌روزرسانی localStorage با تغییر اینپوت
+            saveTasks(task.columnId);
         });
 
         taskElement.classList.add("task-item", getClassForTask(task.columnId));
         taskElement.appendChild(Icon);
         taskElement.appendChild(input);
     } else {
-        // به‌روزرسانی مقدار اینپوت اگه قبلاً رندر شده
+       
         taskElement.querySelector("input").value = task.value;
     }
 
@@ -177,11 +178,11 @@ function drop(ev, targetId) {
         document.getElementById(targetId).appendChild(taskElement);
         tasks[taskId].columnId = targetId;
 
-        // حذف از localStorage ستون مبدا
+       
         removeFromLocalStorage(sourceDivId, taskElement.querySelector("input").value);
-        // به‌روزرسانی localStorage ستون مقصد
-        saveTasks(sourceDivId); // به‌روزرسانی مبدا
-        saveTasks(targetId);    // به‌روزرسانی مقصد
+    
+        saveTasks(sourceDivId); 
+        saveTasks(targetId);  
         assignTaskIds();
     }
 }
@@ -199,8 +200,8 @@ function removeTask(taskId, columnId) {
         delete tasks[taskId];
         const taskElement = document.getElementById(taskId);
         if (taskElement) taskElement.remove();
-        saveTasks(columnId); // به‌روزرسانی localStorage بعد از حذف
-        console.log("Task removed:", taskId, tasks); // برای دیباگ
+        saveTasks(columnId); 
+        console.log("Task removed:", taskId, tasks); 
     }
 }
 
